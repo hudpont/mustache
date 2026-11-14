@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="Listen to The Logic Board, a podcast about Apple, technology, and the world around it, hosted by Hudson Pierpont.">
+  <link rel="alternate" type="application/rss+xml" title="The Logic Board Podcast RSS Feed" href="https://anchor.fm/s/10e22775c/podcast/rss">
+  <title>Listen to The Logic Board — Hudson</title>
+  <style>
+    :root{--bg:#f5f5f7;--surface:rgba(255,255,255,.78);--ink:#1d1d1f;--muted:#6e6e73;--line:rgba(0,0,0,.08);--blue:#06c;--shadow:0 18px 55px rgba(0,0,0,.07)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;letter-spacing:-.025em}
+    a{color:inherit;text-decoration:none}.wrap{width:min(900px,calc(100% - 48px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(245,245,247,.82);backdrop-filter:blur(22px);border-bottom:1px solid var(--line)}
+    nav{height:58px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;letter-spacing:-.04em;font-size:17px}.back{font-size:13px;color:var(--muted)}.back:hover{color:var(--blue)}
+    main{padding:92px 0 100px}.eyebrow{font-size:13px;font-weight:650;color:var(--muted);letter-spacing:.02em}.intro{text-align:center;margin-bottom:38px}.intro h1{font-size:clamp(46px,8vw,76px);line-height:1;letter-spacing:-.075em;margin:18px 0}.intro p{font-size:18px;line-height:1.55;color:var(--muted);max-width:610px;margin:0 auto}
+    .player{background:var(--surface);border:1px solid rgba(255,255,255,.9);border-radius:26px;padding:22px;box-shadow:var(--shadow)}.player iframe{display:block;width:100%;height:352px;border:0;border-radius:14px;background:#fff}
+    .links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--blue);color:#fff;font-size:14px;font-weight:600}.btn.secondary{background:#e8e8ed;color:var(--ink)}.btn:hover{filter:brightness(1.06)}
+    .note{text-align:center;color:var(--muted);font-size:13px;line-height:1.5;margin:22px auto 0;max-width:560px}
+    footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:600px){main{padding:70px 0}.player{padding:12px}.player iframe{height:420px}.intro p{font-size:16px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="index.html">Hudson.</a><a class="back" href="index.html">← Back to home</a></nav></header>
+<main class="wrap">
+  <div class="intro">
+    <div class="eyebrow">THE LOGIC BOARD PODCAST</div>
+    <h1>Press play.<br>Stay curious.</h1>
+    <p>Conversations and stories about Apple, technology, and the ideas shaping the world around us.</p>
+  </div>
+  <section class="player" aria-label="The Logic Board podcast player">
+    <iframe title="Listen to The Logic Board podcast" src="https://podcasters.spotify.com/pod/show/hudson728/embed" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  <div class="links">
+    <a class="btn" href="https://podcasters.spotify.com/pod/show/hudson728" target="_blank" rel="noopener noreferrer">Open podcast page</a>
+    <a class="btn secondary" href="https://anchor.fm/s/10e22775c/podcast/rss" target="_blank" rel="noopener noreferrer">Podcast RSS feed</a>
+  </div>
+  <p class="note">The player is provided by Spotify for Creators. You can also use the RSS feed to follow the show in a podcast app that supports RSS.</p>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Hudson. Made with curiosity.</span><a href="index.html">Back to home ↑</a></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
